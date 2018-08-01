@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
 
   /* CSS vars */
-  --header-photo-width: 200px;
+  --header-photo-width: 220px;
   /* --title-bg-text-color: #5b92cb; */
   --title-bg-text-color: #4a76a8;
   /* END CSS vars */
@@ -48,7 +48,7 @@ body {
 }
 
 .cv-photo-img {
-  width: 200px;
+  width: var(--header-photo-width);
 }
 
 .cv-main-info {
@@ -58,7 +58,7 @@ body {
 .cv-main-about {
   display: grid;
 
-  grid-template-columns: 30% 68%;
+  grid-template-columns: auto 68%;
   grid-column-gap: 2%;
   grid-row-gap: 10px;
   /* grid-auto-flow: column; */
@@ -106,26 +106,57 @@ body {
   grid-template-rows: auto;
   align-items: start;
   justify-content: space-between;
+  min-width: 475px;
 }
 
 .cv-body-container {
   display: grid;
 
-  grid-template-columns: 8% 10% auto 8%;
-  grid-template-rows: auto;
+  grid-template-columns: 8% auto 8%;
   grid-template-areas:
-    ". body body ."
+    ". body ."
     ;
+}
+
+.cv-body-content {
+  display: block;
+  grid-area: body;
+}
+
+.cv-university-record-dates--bottom {
+  align-self: end;
 }
 
 .cv-university-record {
   display: grid;
 
-  grid-template-columns: 8% 10% auto 8%;
-  grid-template-rows: auto;
-  grid-template-areas:
-    ". body body ."
-    ;
+  grid-template-columns: 20% 78%;
+  grid-column-gap: 2%;
+  grid-row-gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+.cv-university-record-content {
+  text-align: center;
+}
+
+.cv-university-record-title {
+  font-size: 18px;
+  font-family: 'YandexSansDisplayBold', Fallback, sans-serif;
+  margin-bottom: 10px;
+}
+
+.cv-university-record-table {
+  display: grid;
+  text-align: left;
+  justify-content: center;
+
+  grid-template-columns: 30% 70%;
+}
+
+.cv-university-record-text--bold {
+  font-family: 'YandexSansDisplayBold', Fallback, sans-serif;
 }
 
 .cv-body-title {
