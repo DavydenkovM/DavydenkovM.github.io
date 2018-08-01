@@ -58,9 +58,10 @@ body {
 .cv-main-about {
   display: grid;
 
-  grid-template-columns: 40% 55%;
-  grid-column-gap: 5%;
+  grid-template-columns: 30% 68%;
+  grid-column-gap: 2%;
   grid-row-gap: 10px;
+  /* grid-auto-flow: column; */
 }
 
 .cv-title {
@@ -98,10 +99,13 @@ body {
   font-family: 'YandexSansDisplayBold', Fallback, sans-serif;
 }
 
-.cv-main-contacts {
+.cv-main-contacts, .cv-main-links {
   display: grid;
 
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .cv-body-container {
