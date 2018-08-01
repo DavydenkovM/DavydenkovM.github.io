@@ -6,13 +6,63 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="index.css">
   </head>
 
   <body>
-    <h1>CV на CSS гридах</h1>
+    <div class="cv-container">
+      <div class="cv-header-container">
+        <!-- <h1 class="cv-title">Личная информация</h1> -->
 
-    <div>
-      Initial commit
+        <div class="cv-photo">
+          <img src="assets/images/MikhailDavydenkov.png" alt="Avatar" class="cv-photo-img">
+        </div>
+
+        <section class="cv-main-info">
+          <div class="cv-title">
+            <h1 class="cv-title-text"> Личная информация </h1>
+          </div>
+
+          <div class="cv-main-about">
+            <div class="cv-main-text--bold"> Фамилия, имя, отчество: </div>
+            <div class="cv-main-text"> Давыденков Михаил Юрьевич </div>
+
+            <div class="cv-main-text--bold"> Дата рождения и место проживания: </div>
+            <div class="cv-main-text"> 23/12/1989, г. Королѐв (МО)</div>
+
+            <div class="cv-main-text--bold"> Контакты: </div>
+            <div class="cv-main-text cv-main-contacts">
+              <a href="tel:+79296358265"> +7-929-635-8265 </a>
+              <a href="mailto:davydenkov.mihail@gmail.com"> davydenkov.mihail@gmail.com </a>
+              <span class="cv-tg-contact"> @davydenkovm </span>
+              <span> Skype: davydenkov_mihal </span>
+            </div>
+
+            <div class="cv-main-text--bold"> Семейное положение: </div>
+            <div class="cv-main-text"> Женат, двое детей </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="cv-body-container">
+        <div class="cv-title cv-body-title">
+          <h1 class="cv-title-text"> Образование </h1>
+        </div>
+
+        <div class="cv-university-record">
+        </div>
+      </section>
+
+      <section class="cv-body-container">
+        <div class="cv-title cv-body-title">
+          <h1 class="cv-title-text"> Профессиональный опыт </h1>
+        </div>
+      </section>
+
+      <section class="cv-footer-container">
+        <h1>CV на CSS гридах</h1>
+      </section>
     </div>
   </body>
 </html>

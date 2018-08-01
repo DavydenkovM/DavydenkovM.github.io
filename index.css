@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'YandexSansDisplayBold';
+  src: url('assets/fonts/YandexSans/YandexSansDisplay-Bold.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'YandexSansDisplayRegular';
+  src: url('assets/fonts/YandexSans/YandexSansDisplay-Regular.ttf')  format('truetype')
+}
+
+body {
+  background-color: white;
+  font-family: 'YandexSansDisplayRegular', Fallback, sans-serif;
+}
+
+.cv-container {
+  display: grid;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  /* CSS vars */
+  --header-photo-width: 200px;
+  /* --title-bg-text-color: #5b92cb; */
+  --title-bg-text-color: #4a76a8;
+  /* END CSS vars */
+}
+
+
+.cv-header-container {
+  display: grid;
+
+  grid-template-columns:
+    8%
+    var(--header-photo-width)
+    2%
+    auto
+    auto
+    8%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". header-photo . main main ."
+    ;
+}
+
+.cv-photo {
+  display: grid;
+  grid-area: header-photo;
+}
+
+.cv-photo-img {
+  width: 200px;
+}
+
+.cv-main-info {
+  grid-area: main;
+}
+
+.cv-main-about {
+  display: grid;
+
+  grid-template-columns: 40% 55%;
+  grid-column-gap: 5%;
+  grid-row-gap: 10px;
+}
+
+.cv-title {
+  display: flex;
+  align-items: flex-start;
+}
+
+.cv-title-text {
+  width: 100%;
+  margin-top: 30px;
+  background: var(--title-bg-text-color);
+  color: white;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'YandexSansDisplayBold', Fallback, sans-serif;
+}
+
+.cv-title-text:before {
+  content: '::';
+  display: block;
+  margin-top: -2.5px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+
+.cv-main-text {
+  font-size: 18px;
+}
+
+.cv-main-text--bold {
+  font-size: 18px;
+  font-family: 'YandexSansDisplayBold', Fallback, sans-serif;
+}
+
+.cv-main-contacts {
+  display: grid;
+
+  grid-template-columns: 50% 50%;
+}
+
+.cv-body-container {
+  display: grid;
+
+  grid-template-columns: 8% 10% auto 8%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". body body ."
+    ;
+}
+
+.cv-university-record {
+  display: grid;
+
+  grid-template-columns: 8% 10% auto 8%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". body body ."
+    ;
+}
+
+.cv-body-title {
+  grid-area: body
+}
+
+.cv-footer-container {
+  display: grid;
+}
