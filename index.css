@@ -13,6 +13,10 @@ body {
   font-family: 'YandexSansDisplayRegular', Fallback, sans-serif;
 }
 
+b {
+  font-family: 'YandexSansDisplayBold', Fallback, sans-serif;
+}
+
 .cv-container {
   display: grid;
   max-width: 1280px;
@@ -71,7 +75,6 @@ body {
 
 .cv-title-text {
   width: 100%;
-  margin-top: 30px;
   background: var(--title-bg-text-color);
   color: white;
   text-transform: uppercase;
@@ -79,6 +82,10 @@ body {
   display: flex;
   justify-content: flex-start;
   font-family: 'YandexSansDisplayBold', Fallback, sans-serif;
+}
+
+.cv-title-text--with-margin {
+  margin-top: 30px;
 }
 
 .cv-title-text:before {
@@ -123,6 +130,9 @@ body {
   grid-area: body;
 }
 
+.cv-university-record-dates b {
+  font-family: 'YandexSansDisplayBold', Fallback, sans-serif;
+}
 .cv-university-record-dates--bottom {
   align-self: end;
 }
@@ -165,4 +175,35 @@ body {
 
 .cv-footer-container {
   display: grid;
+}
+
+
+.cv-job-record {
+  display: grid;
+
+  grid-template-columns: 20% 78%;
+  grid-row-columns: auto auto;
+  grid-column-gap: 2%;
+  grid-row-gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+.cv-job-record-content {
+  text-align: center;
+}
+
+.cv-job-record-dates b {
+  align-self: center;
+  font-family: 'YandexSansDisplayBold', Fallback, sans-serif;
+}
+
+.cv-job-record-title {
+  font-size: 18px;
+  font-family: 'YandexSansDisplayBold', Fallback, sans-serif;
+  margin-bottom: 10px;
+}
+
+.cv-job-record-description {
+  text-align: left;
 }
