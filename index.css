@@ -65,6 +65,7 @@ b {
 
 .cv-main-info {
   grid-area: main;
+  z-index: 1;
 }
 
 .cv-main-about {
