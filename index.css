@@ -55,8 +55,9 @@ b {
 }
 
 .cv-photo {
-  display: grid;
   grid-area: header-photo;
+  display: flex;
+  padding-top: 30px;
 }
 
 .cv-photo-img {
